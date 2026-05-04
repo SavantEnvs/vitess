@@ -56,9 +56,7 @@ RUN go-fuzz-build -func FuzzParser -o /FuzzParser.zip vitess.io/vitess/go/test/f
 # Final image with the fuzz binary
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
+RUN sed -i "s|http://archive.ubuntu.com/ubuntu|http://azure.archive.ubuntu.com/ubuntu|g; s|http://security.ubuntu.com/ubuntu|http://azure.archive.ubuntu.com/ubuntu|g" /etc/apt/sources.list && apt-get update && apt-get install -y --no-install-recommends ca-certificates && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /go/bin/go-fuzz /usr/local/bin/go-fuzz
 COPY --from=builder /FuzzParser.zip /FuzzParser.zip

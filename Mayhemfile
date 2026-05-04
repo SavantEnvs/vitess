@@ -1,0 +1,7 @@
+version: '1.13'
+
+project: vitess
+
+targets:
+- name: FuzzParser
+  cmd: /usr/local/bin/go-fuzz -bin=/FuzzParser.zip -workdir=/tmp/fuzz

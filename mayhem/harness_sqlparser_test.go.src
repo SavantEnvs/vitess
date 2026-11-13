@@ -1,0 +1,52 @@
+//go:build go1.18
+
+// mayhem harnesses — Vitess SQL parser (go/vt/sqlparser).
+//
+// Three native Go fuzz targets over the public sqlparser API, selected with
+// `go-118-fuzz-build -func <name>`:
+//   FuzzParser                   — Parser.Parse (MySQL grammar: tokenizer + yacc parser)
+//   FuzzNormalizer               — Parse2 then Normalize (literal -> bind-var rewriting, AST walk)
+//   FuzzSplitStatementToPieces   — multi-statement splitter
+//
+// FuzzParser is the one legacy target (go-fuzz `FuzzParser`) and keeps its name. The harnesses
+// take bytes only from the fuzzer and do no file I/O. An input the parser rejects is an expected
+// outcome, so those return early without exercising anything further.
+//
+// Committed as `.go.src` so it is never compiled as an ordinary package file; mayhem/build.sh
+// copies it into mayhem/_harness/sqlparser/ as a real _test.go for the go-118-fuzz-build step.
+
+package harness
+
+import (
+	"testing"
+
+	querypb "vitess.io/vitess/go/vt/proto/query"
+	"vitess.io/vitess/go/vt/sqlparser"
+)
+
+func FuzzParser(f *testing.F) {
+	parser := sqlparser.NewTestParser()
+	f.Fuzz(func(t *testing.T, data []byte) {
+		_, _ = parser.Parse(string(data))
+	})
+}
+
+func FuzzNormalizer(f *testing.F) {
+	parser := sqlparser.NewTestParser()
+	f.Fuzz(func(t *testing.T, data []byte) {
+		stmt, reservedVars, err := parser.Parse2(string(data))
+		if err != nil {
+			return
+		}
+		bv := make(map[string]*querypb.BindVariable)
+		_, _ = sqlparser.Normalize(stmt, sqlparser.NewReservedVars("bv", reservedVars), bv,
+			true, "ks", 0, "", map[string]string{}, nil, nil)
+	})
+}
+
+func FuzzSplitStatementToPieces(f *testing.F) {
+	parser := sqlparser.NewTestParser()
+	f.Fuzz(func(t *testing.T, data []byte) {
+		_, _ = parser.SplitStatementToPieces(string(data))
+	})
+}

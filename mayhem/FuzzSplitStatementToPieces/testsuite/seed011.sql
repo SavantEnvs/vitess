@@ -1,0 +1,1 @@
+select * from t1 where a = 736494;SELECT engine FROM information_schema.tables WHERE table_name = 'comments_comment';set autocommit=0;

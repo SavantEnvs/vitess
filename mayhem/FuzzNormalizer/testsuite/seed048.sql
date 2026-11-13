@@ -1,0 +1,1 @@
+with recursive cte as (select id from user where id = 72 union all select id+1 from cte where id < 100) select * from cte

@@ -1,0 +1,1 @@
+select st_within(st_intersection(ST_GeomFromText('point(1 1)'), ST_GeomFromText('multipoint(2 2, 3 3)')),                   st_union(ST_GeomFromText('point(0 0)'), ST_GeomFromText('point(1 1)')));select count(distinct a) from t1;select distinct a1 from t4 where pk_col not in (1,2,3,4);

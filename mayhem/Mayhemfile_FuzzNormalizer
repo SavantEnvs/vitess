@@ -1,0 +1,10 @@
+project: savantenvs/vitess
+target: FuzzNormalizer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzNormalizer/testsuite
+cmds:
+  - cmd: /mayhem/FuzzNormalizer
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/FuzzNormalizer/FuzzNormalizer.dict

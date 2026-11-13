@@ -1,0 +1,1 @@
+select trigger_schema, trigger_name from triggers where trigger_name='tr1'

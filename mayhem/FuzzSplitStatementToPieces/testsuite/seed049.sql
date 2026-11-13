@@ -1,0 +1,1 @@
+with x as (select * from user) select * from x;select * from t1 where a = 736494;update unsharded set col = (select id from unsharded join user on unsharded.id = user.id);

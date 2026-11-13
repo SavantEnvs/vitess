@@ -1,0 +1,10 @@
+project: savantenvs/vitess
+target: FuzzVtctl
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzVtctl/testsuite
+cmds:
+  - cmd: /mayhem/FuzzVtctl
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/FuzzVtctl/FuzzVtctl.dict

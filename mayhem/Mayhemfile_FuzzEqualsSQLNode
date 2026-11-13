@@ -1,0 +1,8 @@
+project: savantenvs/vitess
+target: FuzzEqualsSQLNode
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/FuzzEqualsSQLNode
+    libfuzzer: true
+    timeout: 10

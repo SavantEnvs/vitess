@@ -1,0 +1,1 @@
+with recursive cte as (select id from user where id = 72 union all select id+1 from cte where id < 100) select * from cte;ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`);select collation(conv(130,16,10)), coercibility(conv(130,16,10));

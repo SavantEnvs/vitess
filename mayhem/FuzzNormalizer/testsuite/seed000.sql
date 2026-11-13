@@ -1,0 +1,1 @@
+select _koi8r'a' COLLATE koi8r_bin = _koi8r'A' COLLATE koi8r_general_ci

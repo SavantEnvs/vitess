@@ -1,0 +1,1 @@
+insert into ref(col) values(1)

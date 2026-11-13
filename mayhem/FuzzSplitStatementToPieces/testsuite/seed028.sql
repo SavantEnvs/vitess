@@ -1,0 +1,1 @@
+set autocommit=0;set autocommit=1;select collation(conv(130,16,10)), coercibility(conv(130,16,10));

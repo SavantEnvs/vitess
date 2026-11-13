@@ -1,0 +1,1 @@
+drop procedure if exists user.p1;INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0001_initial', '2019-09-11 20:08:24.711570');select lpad('a',4,'1'),lpad('a',4,'12'),lpad('abcd',3,'12'), lpad(11, 10 , 22);

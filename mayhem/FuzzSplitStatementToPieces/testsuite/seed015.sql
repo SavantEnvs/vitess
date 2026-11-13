@@ -1,0 +1,1 @@
+select lpad('a',4,'1'),lpad('a',4,'12'),lpad('abcd',3,'12'), lpad(11, 10 , 22);create table user.t1(id bigint, t2_id bigint, primary key(id), foreign key (t2_id) references user.t2(id));select * from t1 where a = 736494;

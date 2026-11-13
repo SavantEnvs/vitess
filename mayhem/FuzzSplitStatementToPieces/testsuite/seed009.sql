@@ -1,0 +1,1 @@
+select repeat('hello', -18446744073709551617);select pow(10,log10(10)),power(2,4);insert into user(nonid) values (2);

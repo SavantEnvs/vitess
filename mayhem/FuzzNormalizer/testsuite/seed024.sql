@@ -1,0 +1,1 @@
+select * from t1 union distinct select * from t2 union all select * from t3

@@ -1,0 +1,1 @@
+with t as (select `user`.col1 from `user` join unsharded) select 0 from t join unsharded on unsharded.col1 = t.col1 and unsharded.a = t.col1

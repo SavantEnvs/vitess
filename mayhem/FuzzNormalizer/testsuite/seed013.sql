@@ -1,0 +1,1 @@
+select distinct a1 from t4 where pk_col not in (1,2,3,4)

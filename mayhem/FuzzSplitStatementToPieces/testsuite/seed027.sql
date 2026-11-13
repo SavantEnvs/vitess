@@ -1,0 +1,1 @@
+SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'comments';select trigger_schema, trigger_name from triggers where trigger_name='tr1';drop database foo;

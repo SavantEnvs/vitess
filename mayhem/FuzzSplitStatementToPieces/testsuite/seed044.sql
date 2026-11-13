@@ -1,0 +1,1 @@
+insert into user(nonid) values (2);select get_lock('ee_16407_5', 60);select make_set(3,c1,'�'), make_set(3,'�',c1) from t1;

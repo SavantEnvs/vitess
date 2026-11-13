@@ -1,0 +1,6 @@
+# Per-Dockerfile ignore list for `docker build -f mayhem/Dockerfile .`. BuildKit gives it precedence
+# over upstream's root .dockerignore, which drops tracked paths (examples/compose, examples/backups, ...)
+# and so would make the image's source tree differ from the commit. Keep .git (the grader needs history).
+.DS_Store
+*.swp
+*~

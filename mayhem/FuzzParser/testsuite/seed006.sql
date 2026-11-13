@@ -1,0 +1,1 @@
+select pow(10,log10(10)),power(2,4)

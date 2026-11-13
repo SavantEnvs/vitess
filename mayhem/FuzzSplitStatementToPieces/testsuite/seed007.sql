@@ -1,0 +1,1 @@
+select strcmp(concat(utc_date(),' ',utc_time()),utc_timestamp())=0;insert into unsharded_auto(id, val) values(18446744073709551616, 'aa');select min(f3),max(f3) from t1;

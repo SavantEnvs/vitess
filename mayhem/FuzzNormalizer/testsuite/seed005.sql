@@ -1,0 +1,1 @@
+select count(distinct case when id<=63 then id end) from tb

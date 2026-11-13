@@ -1,0 +1,1 @@
+update unsharded set col = (select id from unsharded join user on unsharded.id = user.id);create database if not exists main;insert into user(nonid) values (2);

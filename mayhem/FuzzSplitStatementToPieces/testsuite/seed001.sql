@@ -1,0 +1,1 @@
+select ST_astext(st_union(st_intersection(ST_GeomFromText('point(1 1)'), ST_GeomFromText('multipoint(2 2, 3 3)')), st_intersection(ST_GeomFromText('point(0 0)'), ST_GeomFromText('point(1 1)'))));select strcmp(concat(utc_date(),' ',utc_time()),utc_timestamp())=0;select * from t1 union distinct select * from t2 union all select * from t3;

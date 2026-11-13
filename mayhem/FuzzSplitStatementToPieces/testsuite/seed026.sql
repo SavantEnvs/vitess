@@ -1,0 +1,1 @@
+set autocommit=1;select make_set(3,c1,'�'), make_set(3,'�',c1) from t1;insert into ref(col) values(1);

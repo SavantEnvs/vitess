@@ -1,0 +1,1 @@
+select pow(10,log10(10)),power(2,4);select * from t1 union distinct select * from t2 union all select * from t3;select * from t1 where a = 736494;

@@ -1,0 +1,1 @@
+select st_equals(st_intersection(ST_GeomFromText('point(1 1)'), ST_GeomFromText('multipoint(2 2, 3 3)')),                   st_union(ST_GeomFromText('point(0 0)'), ST_GeomFromText('point(1 1)')));select repeat('hello', -18446744073709551617);select min(f3),max(f3) from t1;

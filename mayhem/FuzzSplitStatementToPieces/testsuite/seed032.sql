@@ -1,0 +1,1 @@
+SELECT engine FROM information_schema.tables WHERE table_name = 'comments_comment';select trigger_schema, trigger_name from triggers where trigger_name='tr1';drop procedure if exists user.p1;

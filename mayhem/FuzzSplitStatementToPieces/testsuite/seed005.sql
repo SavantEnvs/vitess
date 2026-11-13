@@ -1,0 +1,1 @@
+select count(distinct case when id<=63 then id end) from tb;insert into user(nonid) values (2);INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('post', '0002_auto_20180225_1142', '2019-09-11 20:08:26.223293');

@@ -1,0 +1,1 @@
+select min(f3),max(f3) from t1

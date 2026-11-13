@@ -1,0 +1,1 @@
+with x as (select phone, id, city from user where id > 12 limit 10) select count(city) from x

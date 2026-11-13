@@ -1,0 +1,1 @@
+insert into unsharded_auto(id, val) values(18446744073709551616, 'aa')

@@ -1,0 +1,1 @@
+INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('post', '0002_auto_20180225_1142', '2019-09-11 20:08:26.223293')

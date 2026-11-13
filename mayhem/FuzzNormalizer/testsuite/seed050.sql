@@ -1,0 +1,1 @@
+WITH RECURSIVE emp_cte AS (SELECT id, 1 AS level FROM user WHERE manager_id IS NULL UNION ALL SELECT e.id, cte.level + 1 FROM user e JOIN emp_cte cte ON e.manager_id = cte.id) SELECT * FROM emp_cte

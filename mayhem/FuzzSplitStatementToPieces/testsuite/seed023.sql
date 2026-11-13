@@ -1,0 +1,1 @@
+(SELECT * FROM t1 ORDER BY a DESC LIMIT 5) UNION SELECT * FROM t2 LIMIT 8;select hex(char(2557));select a,c,sum(a) from t1 where a > 10 group by a;

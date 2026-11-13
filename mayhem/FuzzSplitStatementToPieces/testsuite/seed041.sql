@@ -1,0 +1,1 @@
+update user set val = 1 where (id = 1);select lpad('a',4,'1'),lpad('a',4,'12'),lpad('abcd',3,'12'), lpad(11, 10 , 22);select var_samp(o) as 'null', var_pop(o) as 'null' from bug22555;

@@ -1,0 +1,1 @@
+select count(distinct a) from t1;select lpad('a',4,'1'),lpad('a',4,'12'),lpad('abcd',3,'12'), lpad(11, 10 , 22);with recursive cte as (select id from user where id = 72 union all select id+1 from cte where id < 100) select * from cte;

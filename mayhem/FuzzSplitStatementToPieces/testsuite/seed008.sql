@@ -1,0 +1,1 @@
+select min(f3),max(f3) from t1;select aes_decrypt(aes_encrypt('abc','1'),1);create database if not exists main;

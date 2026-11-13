@@ -1,0 +1,1 @@
+select hex(char(2557))

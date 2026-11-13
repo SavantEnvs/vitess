@@ -1,0 +1,1 @@
+insert into ref(col) values(1);with x as (select * from user) select * from x;with recursive cte as (select id from user where id = 72 union all select id+1 from cte where id < 100) select * from cte;

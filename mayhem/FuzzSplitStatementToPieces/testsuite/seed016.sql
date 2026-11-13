@@ -1,0 +1,1 @@
+select get_lock('ee_16407_5', 60);select user,db from information_schema.processlist;SELECT engine FROM information_schema.tables WHERE table_name = 'comments_comment';

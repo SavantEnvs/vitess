@@ -1,0 +1,1 @@
+SELECT engine FROM information_schema.tables WHERE table_name = 'comments_comment'

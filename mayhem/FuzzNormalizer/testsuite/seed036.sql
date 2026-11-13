@@ -1,0 +1,1 @@
+create table user.t1(id bigint, t2_id bigint, primary key(id), foreign key (t2_id) references user.t2(id))

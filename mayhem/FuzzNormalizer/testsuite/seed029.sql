@@ -1,0 +1,1 @@
+INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0003_alter_user_email_max_length', '2019-09-11 20:08:25.944751')

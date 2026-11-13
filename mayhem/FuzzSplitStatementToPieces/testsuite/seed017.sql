@@ -1,0 +1,1 @@
+select collation(conv(130,16,10)), coercibility(conv(130,16,10));select var_samp(o) as 'null', var_pop(o) as 'null' from bug22555;insert into unsharded_auto(id, val) values(18446744073709551616, 'aa');

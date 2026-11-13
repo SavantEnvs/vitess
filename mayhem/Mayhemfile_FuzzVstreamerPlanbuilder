@@ -1,0 +1,8 @@
+project: savantenvs/vitess
+target: FuzzVstreamerPlanbuilder
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/FuzzVstreamerPlanbuilder
+    libfuzzer: true
+    timeout: 10

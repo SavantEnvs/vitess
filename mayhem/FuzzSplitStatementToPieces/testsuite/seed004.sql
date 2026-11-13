@@ -1,0 +1,1 @@
+select make_set(3,c1,'�'), make_set(3,'�',c1) from t1;select strcmp(concat(utc_date(),' ',utc_time()),utc_timestamp())=0;select aes_decrypt(aes_encrypt('abc','1'),1);

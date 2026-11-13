@@ -1,0 +1,1 @@
+select _koi8r'a' COLLATE koi8r_bin = _koi8r'A' COLLATE koi8r_general_ci;insert into ref(col) values(1);select * from t1 union distinct select * from t2 union all select * from t3;

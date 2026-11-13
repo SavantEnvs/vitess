@@ -1,0 +1,1 @@
+select distinct a1 from t4 where pk_col not in (1,2,3,4);select trigger_schema, trigger_name from triggers where trigger_name='tr1';select * from t1 union distinct select * from t2 union all select * from t3;

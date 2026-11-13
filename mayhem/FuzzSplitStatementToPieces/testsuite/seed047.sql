@@ -1,0 +1,1 @@
+with x as (select phone, id, city from user where id > 12 limit 10) select count(city) from x;select count(distinct case when id<=63 then id end) from tb;select st_within(st_intersection(ST_GeomFromText('point(1 1)'), ST_GeomFromText('multipoint(2 2, 3 3)')),                   st_union(ST_GeomFromText('point(0 0)'), ST_GeomFromText('point(1 1)')));

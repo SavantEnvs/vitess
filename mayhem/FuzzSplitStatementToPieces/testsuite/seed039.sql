@@ -1,0 +1,1 @@
+create database if not exists main;select distinct a1 from t4 where pk_col not in (1,2,3,4);select make_set(3,c1,'�'), make_set(3,'�',c1) from t1;

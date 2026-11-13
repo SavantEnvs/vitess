@@ -1,0 +1,1 @@
+select a,c,sum(a) from t1 where a > 10 group by a;select min(f3),max(f3) from t1;select strcmp(concat(utc_date(),' ',utc_time()),utc_timestamp())=0;

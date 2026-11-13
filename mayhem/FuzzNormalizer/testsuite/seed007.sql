@@ -1,0 +1,1 @@
+select strcmp(concat(utc_date(),' ',utc_time()),utc_timestamp())=0

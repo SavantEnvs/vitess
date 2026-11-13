@@ -1,0 +1,1 @@
+select var_samp(o) as 'null', var_pop(o) as 'null' from bug22555

@@ -1,0 +1,1 @@
+with x as (select * from user) select * from x

@@ -1,0 +1,1 @@
+select user,db from information_schema.processlist

@@ -1,0 +1,1 @@
+create table a.b(id int);insert into unsharded_auto(id, val) values(18446744073709551616, 'aa');select repeat('hello', -18446744073709551617);

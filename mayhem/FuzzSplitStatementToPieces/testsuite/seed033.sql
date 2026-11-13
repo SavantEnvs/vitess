@@ -1,0 +1,1 @@
+ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`);set autocommit=1;select distinct a1 from t4 where pk_col not in (1,2,3,4);

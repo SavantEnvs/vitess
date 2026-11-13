@@ -1,0 +1,23 @@
+# <binary/target> <package dir in the vitess tree> <upstream OSS-Fuzz function: func(data []byte) int>
+FuzzAPIMarshal go/test/fuzzing/amtest FuzzAPIMarshal
+FuzzCollations go/mysql/collations/colldata FuzzCollations
+FuzzTestBuilder go/vt/vtgate/planbuilder FuzzTestBuilder
+FuzzVindex go/vt/vtgate/vindexes FuzzVindex
+FuzzVreplicationEngine go/vt/vttablet/tabletmanager/vreplication FuzzEngine
+FuzzVtctl go/test/fuzzing Fuzz
+FuzzIsDML go/test/fuzzing FuzzIsDML
+FuzzNodeFormat go/test/fuzzing FuzzNodeFormat
+FuzzGRPCTMServer go/test/fuzzing FuzzGRPCTMServer
+FuzzOnlineDDLFromCommentedStatement go/test/fuzzing FuzzOnlineDDLFromCommentedStatement
+FuzzNewOnlineDDLs go/test/fuzzing FuzzNewOnlineDDLs
+FuzzEqualsSQLNode go/test/fuzzing FuzzEqualsSQLNode
+FuzzTabletManagerExecuteFetchAsDba go/test/fuzzing FuzzTabletManagerExecuteFetchAsDba
+FuzzUnmarshalJSON go/test/fuzzing FuzzUnmarshalJSON
+FuzzLoadTable go/test/fuzzing FuzzLoadTable
+FuzzWritePacket go/mysql FuzzWritePacket
+FuzzHandleNextCommand go/mysql FuzzHandleNextCommand
+FuzzReadQueryResults go/mysql FuzzReadQueryResults
+FuzzTLSServer go/mysql FuzzTLSServer
+FuzzVstreamerPlanbuilder go/vt/vttablet/tabletserver/vstreamer Fuzz
+FuzzGetPlan go/vt/vttablet/tabletserver FuzzGetPlan
+FuzzGRPCVtgate go/vt/vtgate/grpcvtgateconn Fuzz

@@ -1,0 +1,8 @@
+project: savantenvs/vitess
+target: FuzzCollations
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/FuzzCollations
+    libfuzzer: true
+    timeout: 10

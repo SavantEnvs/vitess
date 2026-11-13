@@ -1,0 +1,1 @@
+alter table a.b ADD id int;SELECT engine FROM information_schema.tables WHERE table_name = 'django_session';INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0001_initial', '2019-09-11 20:08:24.711570');

@@ -1,0 +1,1 @@
+select a1,a2,b,min(c) from t1 where ((a1 > 'a') or (a1 < '9')) and ((a2 >= 'b') and (a2 < 'z')) and (b = 'a') and ((c < 'h112') or (c = 'j121') or (c > 'k121' and c < 'm122') or (c > 'o122')) group by a1,a2,b;select _koi8r'a' COLLATE koi8r_bin = _koi8r'A' COLLATE koi8r_general_ci;(SELECT * FROM t1 ORDER BY a DESC LIMIT 5) UNION SELECT * FROM t2 LIMIT 8;

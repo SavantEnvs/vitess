@@ -1,0 +1,1 @@
+select a,c,sum(a) from t1 where a > 10 group by a

@@ -1,0 +1,1 @@
+INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0001_initial', '2019-09-11 20:08:24.711570');select var_samp(o) as 'null', var_pop(o) as 'null' from bug22555;with recursive cte as (select id from user where id = 72 union all select id+1 from cte where id < 100) select * from cte;

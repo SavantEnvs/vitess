@@ -1,0 +1,1 @@
+WITH `count_a` AS (SELECT COUNT(`id`) AS `num` FROM `unsharded_a`), `count_b` AS (SELECT COUNT(`id`) AS `num` FROM `unsharded_b`) SELECT 'count_a' AS `tab`, `num` FROM `count_a` UNION SELECT 'count_b' AS `tab`, `num` FROM `count_b`

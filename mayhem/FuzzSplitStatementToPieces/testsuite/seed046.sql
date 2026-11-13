@@ -1,0 +1,1 @@
+delete from user where id in (1, 2, 3);create table user.t1(id bigint, t2_id bigint, primary key(id), foreign key (t2_id) references user.t2(id));(SELECT * FROM t1 ORDER BY a DESC LIMIT 5) UNION SELECT * FROM t2 LIMIT 8;

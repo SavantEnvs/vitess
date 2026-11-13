@@ -1,0 +1,1 @@
+select user,db from information_schema.processlist;select hex(char(2557));SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'comments';

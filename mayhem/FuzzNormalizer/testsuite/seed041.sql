@@ -1,0 +1,1 @@
+update user set val = 1 where (id = 1)

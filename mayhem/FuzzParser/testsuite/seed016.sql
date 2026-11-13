@@ -1,0 +1,1 @@
+select get_lock('ee_16407_5', 60)

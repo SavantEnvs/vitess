@@ -1,0 +1,1 @@
+select insert('hello', -18446744073709551615, 1, 'hi');select collation(conv(130,16,10)), coercibility(conv(130,16,10));alter table a.b ADD id int;

@@ -1,0 +1,1 @@
+select * from t1 union distinct select * from t2 union all select * from t3;update unsharded set col = (select id from unsharded join user on unsharded.id = user.id);insert into unsharded_auto(id, val) values(18446744073709551616, 'aa');

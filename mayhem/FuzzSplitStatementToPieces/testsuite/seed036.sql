@@ -1,0 +1,1 @@
+create table user.t1(id bigint, t2_id bigint, primary key(id), foreign key (t2_id) references user.t2(id));select * from t1 where a = 736494;drop procedure if exists user.p1;
